@@ -16,11 +16,16 @@
     }
     echo '<hr />';
 
-    $var1 = 0; $var2 = 0.1;
-    if ($var1) echo 'zero is true' . '<br />';
+    // 數值相關
+    $var1 = 0;      // false
+    $var2 = 0.1;    // true
+    $var3 = 0.00;   // false
+    if ($var1) echo '0 is true' . '<br />';
     if ($var2) echo 'non-zero is true' . '<br />';
+    if ($var3) echo '0.00 is true' . '<br />';
     echo '<hr />';
 
+    // 字串相關
     $var1 = ''; $var2 = ' '; $var3 = '0'; $var4 = '00';
     if ($var1) echo 'non-string is true' . '<br />';
     if ($var2) echo 'space is true' . '<br />';
